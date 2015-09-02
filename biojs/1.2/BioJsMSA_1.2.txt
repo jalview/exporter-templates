@@ -45,7 +45,7 @@ function toggleMenuVisibility(){
 
 function openJalviewUsingCurrentUrl(){
 	var json = JSON.parse(document.getElementById("seqData").value)
-    var jalviewVersion = json[‘appSettings’].version;
+    var jalviewVersion = json['appSettings'].version;
     var url = json['appSettings'].webStartUrl;
   	var myForm = document.createElement("form");
   	myForm.action = url;
