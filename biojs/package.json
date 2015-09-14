@@ -8,7 +8,7 @@
             "type": "git"
         },
         {
-            "url": "https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/1.2.0/BioJsMSA_0.2.0.txt",
+            "url": "https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/BioJsMSA_0.2.0.txt",
             "version": "0.2.0",
             "type": "git"
         },
