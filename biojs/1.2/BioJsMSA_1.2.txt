@@ -25,7 +25,7 @@
         var menu = document.getElementsByClassName("biojs_msa_menubar");
         var divToggleButton = document.getElementById("divToggleButton");
         if (menu[0].style.display == 'block') {
-            menu[0].style.display = 'none';
+            menu[0].style.display = 'none'; 
             divToggleButton.value = "Show BioJS Menu";
         } else {
             menu[0].style.display = 'block';
