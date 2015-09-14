@@ -7,7 +7,7 @@
 <!-- <script src="https://s3-eu-west-1.amazonaws.com/biojs/msa/latest/msa.js"></script> -->
 <!-- <link type=text/css rel=stylesheet href=https://s3-eu-west-1.amazonaws.com/biojs/msa/latest/msa.css /> -->
 <input type="hidden" id="seqData" name="seqData" value='#sequenceData#'/>
-<input type="button" name="divToggleButton" id="divToggleButton" onclick="javascipt:toggleMenuVisibility();" value="Show Menu"> </input> 
+<input type="button" name="divToggleButton" id="divToggleButton" onclick="javascipt:toggleMenuVisibility();" value="Show BioJS Menu"> </input> 
 <button onclick="javascipt:openJalviewUsingCurrentUrl();"> Launch in Jalview </button>
 </br> &nbsp;
 	<div style="border: 2px solid blue; border: 2px solid blue; width: 99%;   min-height: 99%; padding: 5px 5px 5px 5px;" id="yourDiv"> press "Run with JS" </div> 
@@ -26,10 +26,10 @@
         var divToggleButton = document.getElementById("divToggleButton");
         if (menu[0].style.display == 'block') {
             menu[0].style.display = 'none';
-            divToggleButton.value = "Show Menu";
+            divToggleButton.value = "Show BioJS Menu";
         } else {
             menu[0].style.display = 'block';
-            divToggleButton.value = "Hide Menu";
+            divToggleButton.value = "Hide BioJS Menu";
         }
     }
 
@@ -9663,6 +9663,5 @@ biojs.io.clustal.read("#", function(seqs) {
 
     // call render at the end to display the whole MSA
     m.render();
-    toggleMenuVisibility();
     toggleMenuVisibility();
 }); </script>
