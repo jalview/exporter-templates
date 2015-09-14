@@ -1,8 +1,8 @@
 
 <meta charset="UTF-8">
-<link type="text/css" rel="stylesheet" href="http://parce.li/bundle/msa@0.4.7">
-<script src="https://wzrd.in/bundle/msa@0.4.7"></script>
-<script src="https://wzrd.in/bundle/biojs-io-clustal@latest"></script>
+<link type="text/css" rel="stylesheet" href="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/biojs.css">
+<script src="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/bjs-msa-core.javascript"></script>
+<script src="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/biojs-io-clustal.javascript"></script>
  
 
 <input type="button" name="divToggleButton" id="divToggleButton" onclick="javascipt:toggleMenuVisibility();" value="Show BioJS Menu"></input>
