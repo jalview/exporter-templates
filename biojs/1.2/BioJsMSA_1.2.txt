@@ -9608,7 +9608,7 @@ biojs.io.clustal.read("#", function(seqs) {
 
     opts.el = document.getElementById("yourDiv");
     opts.vis = {
-        conserv: false,
+        conserv: true,
         overviewbox: false,
         labelId: false
     };
