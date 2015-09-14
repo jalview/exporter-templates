@@ -6,15 +6,15 @@
 <!-- include MSA js + css -->
 <!-- <script src="https://s3-eu-west-1.amazonaws.com/biojs/msa/latest/msa.js"></script> -->
 <!-- <link type=text/css rel=stylesheet href=https://s3-eu-west-1.amazonaws.com/biojs/msa/latest/msa.css /> -->
-
-<img src="http://www.jalview.org/help/html/Jalview_Logo.png" alt="Jalview Logo" title="This html page was generated from Jalview, to import the data back to Jalview, please drag the generated html file and drop it unto the Jalview workbench.Alternatively, you could copy the url from the address bar and use Jalview 's url importer (main menu-> File-> Input Alignment-> from URL) to import back the alignment jalview.">
-
-</br> </br>
-
+<input type="hidden" id="seqData" name="seqData" value='#sequenceData#'/>
 <input type="button" name="divToggleButton" id="divToggleButton" onclick="javascipt:toggleMenuVisibility();" value="Show Menu"> </input> 
 <button onclick="javascipt:openJalviewUsingCurrentUrl();"> Launch in Jalview </button>
-</br> </br>    
-	<div id="yourDiv"> press "Run with JS" </div> 
+</br> &nbsp;
+	<div style="border: 2px solid blue; border: 2px solid blue; width: 99%;   min-height: 99%; padding: 5px 5px 5px 5px;" id="yourDiv"> press "Run with JS" </div> 
+<br/>
+
+<div style="padding: 5px 5px 5px 5px; vertical-align: middle; position: absolute;right: 0px; width: 210px;">Generated from 
+ <img width=100 height=25 src="http://www.jalview.org/help/html/Jalview_Logo.png" alt="Jalview Logo" title="This html page was generated from Jalview, to import the data back to Jalview, please drag the generated html file and drop it unto the Jalview workbench. Alternatively, you could copy the url from the address bar and use Jalview's url importer (main menu-> File-> Input Alignment-> from URL) to import back the alignment jalview." /><div>
 </body> 
 </html>
 
