@@ -78,6 +78,9 @@
         if (cs.toUpperCase() === "TURN PROPENSITY" || cs.toUpperCase() === "TURN") {
             return "turn";
         }
+        if (cs.toUpperCase() === "STRAND PROPENSITY" || cs.toUpperCase() === "STRAND") {
+            return "strand";
+        }
         if (cs.toUpperCase() === "BURIED INDEX" || cs.toUpperCase() === "BURIED") {
             return "buried";
         }
