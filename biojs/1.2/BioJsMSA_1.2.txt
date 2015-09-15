@@ -64,51 +64,51 @@ function openJalviewUsingCurrentUrl() {
 
 //convert BioJSON colour scheme to BioJS colour scheme
 function convertToBioJSColourScheme(cs) {
-    if (cs.toUpperCase() === "TAYLOR") {
-        return "taylor";
-    }
-    if (cs.toUpperCase() === "CLUSTAL") {
-        return "clustal";
-    }
-    if (cs.toUpperCase() === "NUCLEOTIDE") {
-        return "nucleotide";
-    }
-    if (cs.toUpperCase() === "PURINE/PYRIMIDINE") {
-        return "purine";
-    }
-    if (cs.toUpperCase() === "HELIX PROPENSITY") {
-        return "helix";
-    }
-    if (cs.toUpperCase() === "TURN PROPENSITY") {
-        return "turn";
-    }
-    if (cs.toUpperCase() === "BURIED INDEX") {
-        return "buried";
-    }
-    if (cs.toUpperCase() === "HYDROPHOBIC") {
-        return "hydro";
-    }
-    if (cs.toUpperCase() === "% IDENTITY") {
-        return "pid";
-    }
-    if (cs.toUpperCase() === "ZAPPO") {
-        return "zappo";
-    }
+        if (cs.toUpperCase() === "TAYLOR") {
+            return "taylor";
+        }
+        if (cs.toUpperCase() === "CLUSTAL") {
+            return "clustal";
+        }
+        if (cs.toUpperCase() === "NUCLEOTIDE") {
+            return "nucleotide";
+        }
+        if (cs.toUpperCase() === "PURINE/PYRIMIDINE" || cs.toUpperCase() === "PURINE") {
+            return "purine";
+        }
+        if (cs.toUpperCase() === "HELIX PROPENSITY" || cs.toUpperCase() === "HELIX") {
+            return "helix";
+        }
+        if (cs.toUpperCase() === "TURN PROPENSITY" || cs.toUpperCase() === "TURN") {
+            return "turn";
+        }
+        if (cs.toUpperCase() === "BURIED INDEX" || cs.toUpperCase() === "BURIED") {
+            return "buried";
+        }
+        if (cs.toUpperCase() === "HYDROPHOBIC" || cs.toUpperCase() === "HYDRO") {
+            return "hydro";
+        }
+        if (cs.toUpperCase() === "% IDENTITY" || cs.toUpperCase() === "PID") {
+            return "pid";
+        }
+        if (cs.toUpperCase() === "ZAPPO") {
+            return "zappo";
+        }
 
-    //these colour scheme are not yet supported by BioJS 
-    if (cs.toUpperCase() === "T-COFFEE SCORES") {
-        return "T-Coffee Scores";
-    }
-    if (cs.toUpperCase() === "RNA INTERACTION TYPE") {
-        return "RNA Interaction type";
-    }
-    if (cs.toUpperCase() === "BLOSUM62") {
-        return "Blosum62";
-    }
-    if (cs.toUpperCase() === "RNA HELICES") {
-        return "RNA Helices";
-    }
-    return "foo";
+        //these colour scheme are not yet supported by BioJS 
+        if (cs.toUpperCase() === "T-COFFEE SCORES") {
+            return "T-Coffee Scores";
+        }
+        if (cs.toUpperCase() === "RNA INTERACTION TYPE") {
+            return "RNA Interaction type";
+        }
+        if (cs.toUpperCase() === "BLOSUM62") {
+            return "Blosum62";
+        }
+        if (cs.toUpperCase() === "RNA HELICES") {
+            return "RNA Helices";
+        }
+        return "foo";
 }
 
 
