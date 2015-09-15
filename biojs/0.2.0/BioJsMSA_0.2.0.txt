@@ -1,9 +1,4 @@
 
-<meta charset="UTF-8">
-<link type="text/css" rel="stylesheet" href="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/biojs.css">
-<script src="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/bjs-msa-core.javascript"></script>
-<script src="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/biojs-io-clustal.javascript"></script>
- 
 
 <input type="button" name="divToggleButton" id="divToggleButton" onclick="javascipt:toggleMenuVisibility();" value="Show BioJS Menu"></input>
 <button onclick="javascipt:openJalviewUsingCurrentUrl();">Launch in Jalview</button>
@@ -12,9 +7,15 @@
 
 <div style="border: 2px solid blue; border: 2px solid blue; width: 99%;   min-height: 99%; padding: 5px 5px 5px 5px;" id='snippetDiv'></div>
 <div style="padding: 5px 5px 5px 5px; vertical-align: middle; position: absolute;right: 0px; width: 210px;">Generated from 
- <img width=100 height=25 src="http://www.jalview.org/help/html/Jalview_Logo.png" alt="Jalview Logo" title="This html page was generated from Jalview, to import the data back to Jalview, please drag the generated html file and drop it unto the Jalview workbench. Alternatively, you could copy the url from the address bar and use Jalview's url importer (main menu-> File-> Input Alignment-> from URL) to import back the alignment jalview." /><div>
-  
+ <img width=100 height=25 src="http://www.jalview.org/help/html/Jalview_Logo.png" alt="Jalview Logo" title="This html page was generated from Jalview, to import the data back to Jalview, please drag the generated html file and drop it unto the Jalview workbench. Alternatively, you could copy the url from the address bar and use Jalview's url importer (main menu-> File-> Input Alignment-> from URL) to import back the alignment jalview." /><div>  
 </body> 
+
+<header>
+<title>BioJS MSA viewer</title>
+<link type="text/css" rel="stylesheet" href="http://parce.li/bundle/msa@0.4.7">
+<script src="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/bjs-msa-core.javascript"></script>
+<script src="https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.2.0/biojs-io-clustal.javascript"></script>
+</header> 
 </html>
 
 <script>
@@ -68,22 +69,22 @@
         if (cs.toUpperCase() === "NUCLEOTIDE") {
             return "nucleotide";
         }
-        if (cs.toUpperCase() === "PURINE/PYRIMIDINE") {
+        if (cs.toUpperCase() === "PURINE/PYRIMIDINE" || cs.toUpperCase() === "PURINE") {
             return "purine";
         }
-        if (cs.toUpperCase() === "HELIX PROPENSITY") {
+        if (cs.toUpperCase() === "HELIX PROPENSITY" || cs.toUpperCase() === "HELIX") {
             return "helix";
         }
-        if (cs.toUpperCase() === "TURN PROPENSITY") {
+        if (cs.toUpperCase() === "TURN PROPENSITY" || cs.toUpperCase() === "TURN") {
             return "turn";
         }
-        if (cs.toUpperCase() === "BURIED INDEX") {
+        if (cs.toUpperCase() === "BURIED INDEX" || cs.toUpperCase() === "BURIED") {
             return "buried";
         }
-        if (cs.toUpperCase() === "HYDROPHOBIC") {
+        if (cs.toUpperCase() === "HYDROPHOBIC" || cs.toUpperCase() === "HYDRO") {
             return "hydro";
         }
-        if (cs.toUpperCase() === "% IDENTITY") {
+        if (cs.toUpperCase() === "% IDENTITY" || cs.toUpperCase() === "PID") {
             return "pid";
         }
         if (cs.toUpperCase() === "ZAPPO") {
@@ -248,14 +249,4 @@ toggleMenuVisibility();
 // BioJS event system test (you can safely remove this in your app)
 //instance=m.g
 
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51509688-4', 'auto');
-  ga('send', 'pageview');
 </script>
