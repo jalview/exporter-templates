@@ -1,10 +1,15 @@
 {
     "description": "JSON model for BioJs Git releases",
-    "latestReleaseVersion": "0.1.0",
+    "latestReleaseVersion": "0.1.1",
     "releases": [
         {
             "url": "https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.1.0/BioJsMSA_0.1.0.txt",
             "version": "0.1.0",
+            "type": "git"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/jalview/exporter-templates/master/biojs/0.1.0/BioJsMSA_0.1.1.txt",
+            "version": "0.1.1",
             "type": "git"
         },
         {
